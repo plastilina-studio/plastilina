@@ -1,0 +1,15 @@
+schema_version = "1.0.0"
+id = "plastilina"
+version = "0.1.0"
+name = "Plastilina"
+tagline = "Interactive tutorials inside Blender, in English and Spanish"
+maintainer = "Plastilina Studio <hola@plastilina.org>"
+type = "add-on"
+website = "https://www.plastilina.app"
+tags = ["User Interface", "Greese Pencil", "Animation"]
+blender_version_min = "4.2.0"
+license = ["SPDX:GPL-3.0-or-later"]
+copyright = ["2026 Plastilina Studio"]
+
+
+
