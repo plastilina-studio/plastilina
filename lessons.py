@@ -1,4 +1,4 @@
-# SPDX-FIleCopyrightText: 2026 Plastilina Studio
+# SPDX-FileCopyrightText: 2026 Plastilina Studio
 # SPDX-License-Identifier: GPL-3.0-or-later
 #
 # Plastilina -- Interactive tutorials inside Blender
@@ -9,7 +9,7 @@
 # See <https://www.gnu.org/licenses/>
 
 
-"""Lesson content for Blender Tutor.
+"""Lesson content for Plastilina.
 
 Each step has a title, instructions, optional keys and hint, and two callables:
   start(p, base) -> record a baseline when the step begins (optional)

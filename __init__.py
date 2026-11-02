@@ -1,4 +1,4 @@
-# SPDX-FIleCopyrightText: 2026 Plastilina Studio
+# SPDX-FileCopyrightText: 2026 Plastilina Studio
 # SPDX-License-Identifier: GPL-3.0-or-later
 #
 # Plastilina -- Interactive tutorials inside Blender
@@ -63,7 +63,7 @@ def save_progress():
         with open(progress_path(), "w") as f:
             json.dump(PROGRESS, f, indent=1)
     except OSError as e:
-        print("Blender Tutor: could not save progress:", e)
+        print("Plastilina: could not save progress:", e)
 
 
 def rank():
@@ -172,7 +172,7 @@ def tick():
     except ReferenceError:
         pass  # an object was deleted mid-check; try again next tick
     except Exception as e:  # never let a lesson bug kill the timer
-        print("Blender Tutor:", repr(e))
+        print("Plastilina:", repr(e))
     return 0.3
 
 
@@ -350,7 +350,7 @@ class TUTOR_OT_open(bpy.types.Operator):
 
     def execute(self, context):
         show_tutor_sidebar()
-        self.report({"INFO"}, "Blender Tutor is open in the sidebar (N ▸ Tutor)")
+        self.report({"INFO"}, "Plastilina is open in the sidebar (N ▸ Tutor)")
         return {"FINISHED"}
 
 
@@ -386,7 +386,7 @@ class TUTOR_PT_main(bpy.types.Panel):
     bl_space_type = "VIEW_3D"
     bl_region_type = "UI"
     bl_category = TAB
-    bl_label = "Blender Tutor"
+    bl_label = "Plastilina"
 
     def draw(self, context):
         if STATE["lesson"] is None:
