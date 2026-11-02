@@ -30,7 +30,7 @@ from .lessons import LESSONS, RANKS
 
 STEP_XP = 10
 LESSON_XP = 30
-TAB = "Tutor"
+TAB = "Plastilina"
 
 STATE = {"lesson": None, "step": 0, "base": {}, "cube": "Cube", "complete": False,
          "hint": False, "flash": None, "gained": 0}
@@ -350,7 +350,7 @@ class TUTOR_OT_open(bpy.types.Operator):
 
     def execute(self, context):
         show_tutor_sidebar()
-        self.report({"INFO"}, "Plastilina is open in the sidebar (N ▸ Tutor)")
+        self.report({"INFO"}, "Plastilina is open in the sidebar (N ▸ Plastilina)")
         return {"FINISHED"}
 
 
